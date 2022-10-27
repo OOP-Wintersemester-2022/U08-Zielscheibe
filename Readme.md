@@ -1,34 +1,14 @@
----
-title: Template
-author: Zuletzt bearbeitet von Alexander Bazo
-documentclass: scrartcl
-classoption:
-  - a4paper
-header-includes: |
-    \usepackage{german} 
-    \usepackage[a4paper,left=2.5cm, right=2.5cm,top=2.5cm, bottom=3cm]{geometry}
-    \usepackage{fancyhdr}
-    \usepackage{graphicx}
-    \pagestyle{fancy}
-    \fancyhf{}
-    \rhead{OOP WS 2020/21}
-    \lhead{U00 | Template}
-    \cfoot{\includegraphics[height=2cm]{docs/footer.png}}
-    \fancypagestyle{plain}{
-      \fancyhf{}
-      \rhead{OOP WS 2020/21}
-      \lhead{U00 | Template}
-      \cfoot[C]{\includegraphics[height=2cm]{docs/footer.png}}}
----
+# U08 | Zielscheibe
 
+## **Zielscheibe**
 
-# Template für Übungsaufgaben 
+In dieser Aufgabe sollen Sie eine Zielscheibe auf dem Bildschirm
+zeichnen:
 
-## Wichtige Informationen zur Bearbeitung der Aufgabe 
- - [Link zu wichtiger Ressource](https://www.uni-regensburg.de/sprache-literatur-kultur/medieninformatik/)
+| Die Zielscheibe. |
+|:----:|
+| ![Target](./docs/u03-target.png) |
 
-## Starterpaket
+Die Zielscheibe muss aus 15 Ellipse-Objekten bestehen und im Zentrum des Bildschirms gezeichnet werden. Der mittlere Ring ist rot und hat einen Durchmesser von 10, die Farben wechseln sich dann nach außen hin ab. Der Durchmesser jedes weiteren Rings entspricht dem seines Vorgängers, erhöht um den Durchmesser des ersten Rings.  Legen Sie für die Anzahl der Ringe und den Durchmesser des innersten Rings geeignete Konstanten an, und testen Sie, ob Ihr Programm auch mit anderen Werten einwandfrei funktioniert. Legen Sie weitere Konstanten an, um Ihren Code robuster gegen Veränderungen zu machen.
 
-Ein vorbereitetes Starterpaket zur selbständigen Implementierung der Aufgabe finden Sie [hier](https://github.com/OOP-Ubungen-WS2020-21/U00-Template-fuer-Aufgaben/archive/Starterpaket.zip).
-
-## Text
+**Tipp:** Die Ringe werden übereinander gezeichnet, d.h. Sie müssen mit dem äußersten Ring anfangen, um zu vermeiden, dass die kleineren Ringe verdeckt werden.
